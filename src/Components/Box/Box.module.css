@@ -6,9 +6,12 @@
     height:50%;
 }
 .text{
-    font-size: 16px;
+    font-size: 36px;
     padding: 5px;
 
+}
+.textLoop{
+    padding: 10px;
 }
 .red{
     background-color: red;

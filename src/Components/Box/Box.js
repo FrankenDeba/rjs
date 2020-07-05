@@ -7,7 +7,7 @@ class Box extends React.Component{
         super(props)
     
         this.state = {
-        arr:[[1],[1,1],[1,1,1],[1,1,1,1]]
+        
         }
     }
     
@@ -18,12 +18,7 @@ class Box extends React.Component{
         return (
             <div className = {`${styles.container} ${col==='red'?styles.red:styles.green}`}>
             
-                {this.state.arr.map(item =>{
-                    return <div>{item.map(el =>{
-                        return <span className = {styles.text}>Hello</span>
-                     })}</div>
-                })
-                }
+                
                 
                 
             </div>

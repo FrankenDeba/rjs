@@ -10,7 +10,8 @@ class App extends React.Component{
     this.state = {
        col:"red",
        isRed:true,
-       text:""
+       text:"",
+       arr:[[1],[1,1],[1,1,1],[1,1,1,1]]
     
     }
   }
@@ -25,6 +26,14 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
+        <div className = "textBox">
+        {this.state.arr.map((item,index) =>{
+                    return <div key = {index} className = "textLoop">{item.map((el,index) =>{
+                        return <span key = {index} className = "hellotext">Hello</span>
+                     })}</div>
+                })
+                }
+        </div>
        <Box col={this.state.col}/>
        <Button click = {()=>this.changeColor()}/>
        <div className = "text">{this.state.text}</div>
