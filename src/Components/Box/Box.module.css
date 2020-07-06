@@ -4,6 +4,8 @@
     align-items: flex-start;
     width:50%;
     height:50%;
+    opacity: 0.5;
+    z-index: 1;
 }
 .text{
     font-size: 36px;

@@ -26,6 +26,7 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
+        <Box col={this.state.col}/>
         <div className = "textBox">
         {this.state.arr.map((item,index) =>{
                     return <div key = {index} className = "textLoop">{item.map((el,index) =>{
@@ -34,7 +35,7 @@ class App extends React.Component{
                 })
                 }
         </div>
-       <Box col={this.state.col}/>
+       
        <Button click = {()=>this.changeColor()}/>
        <div className = "text">{this.state.text}</div>
       </div>
